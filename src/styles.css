@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Your global styles.css */
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #3f51b5;
+    --text-color: #333;
+  }
+  
+  /* Specific styling for the stepper */
+  .mat-horizontal-stepper {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .mat-step-header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }

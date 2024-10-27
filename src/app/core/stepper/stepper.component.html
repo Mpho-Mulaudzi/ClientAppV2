@@ -1,0 +1,35 @@
+
+  
+  <div class="stepper-container">
+    <div class="nav-bar"></div>
+  <div class="logo"></div>
+    <mat-horizontal-stepper [linear]="isLinear">
+        <mat-step>
+            <ng-template matStepLabel>Choose Test</ng-template>
+            <app-choose-tests></app-choose-tests>
+            <div class="button-container">
+              <button mat-button matStepperNext mat-raised-button color="primary" style="width: 250px;">Next</button>
+            </div>
+          </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Capture Patient Demographics</ng-template>
+        <app-capture-demographics></app-capture-demographics>
+        <div class="button-container">
+        <button matStepperPrevious mat-raised-button color="primary"  style="width: 250px;" >Back</button>
+        <button matStepperNext mat-raised-button color="primary"  style="width: 250px;">Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Capture Test Results</ng-template>
+        <app-capture-results></app-capture-results>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Generate Report</ng-template>
+        <app-generate-report 
+        [selectedTest]="selectedTest"
+        [testResults]="testResults"
+         [patientDemographics]="patientDemographics">
+        </app-generate-report>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>

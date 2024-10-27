@@ -1,0 +1,10 @@
+<form [formGroup]="testControl">
+<mat-form-field appearance="fill">
+    <mat-label>Choose Test</mat-label>
+    <mat-select>
+        <mat-option *ngFor="let test of tests" 
+        [value]="test.TestId">{{test.Description}}</mat-option>
+      </mat-select>
+  </mat-form-field>
+
+</form>

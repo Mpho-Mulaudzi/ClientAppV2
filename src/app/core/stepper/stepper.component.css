@@ -1,0 +1,58 @@
+.stepper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px
+  }
+  .mat-horizontal-stepper-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; /* Adjust the padding as needed */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .logo-container {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .mat-raised-button {
+    /* Customize button styles as needed */
+    width: 200px; /* Adjust width as desired */
+  }
+  .mat-step-content {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  ::ng-deep .mat-horizontal-stepper-header-container .mat-step-header .mat-step-header:hover,
+  ::ng-deep .mat-horizontal-stepper-header-container .mat-step-header-selected {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-top: 20px;
+  }
+  
+  .mat-raised-button {
+    width: 250px;
+  }
+  .logo {
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/images/logo.jpg');
+    background-size: cover; /* or contain, depending on how you want the image to be sized */
+  }
+  .nav-bar{
+    background-color: var(--accent-color); /* Primary color background */
+    height: 50px; /* Adjust height as needed */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+  }

@@ -1,0 +1,10 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+  
+  /* Optional: Style individual form fields */
+  mat-form-field {
+    margin-bottom: 10px;
+  }

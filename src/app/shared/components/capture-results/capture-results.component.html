@@ -1,0 +1,19 @@
+<form [formGroup]="resultForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Test ID</mat-label>
+      <input matInput formControlName="testId">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Result</mat-label>
+      <input matInput formControlName="result">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Comment</mat-label>
+      <textarea matInput formControlName="comment"></textarea>
+    </mat-form-field>   
+  
+  
+    <button mat-raised-button color="primary"(click)="submitResult()" matStepperNext>Submit Result</button>
+  </form>
